@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="a2a449a9835f477896c2c6cd979ea3f3" class="chart-container" style="width:2000px; height:1000px;"></div>
+    <div id="5994dcc2f1274df8b2b35c4f260fa622" class="chart-container" style="width:2000px; height:1000px;"></div>
     <script>
-        var chart_a2a449a9835f477896c2c6cd979ea3f3 = echarts.init(
-            document.getElementById('a2a449a9835f477896c2c6cd979ea3f3'), 'white', {renderer: 'canvas'});
-        var option_a2a449a9835f477896c2c6cd979ea3f3 = {
+        var chart_5994dcc2f1274df8b2b35c4f260fa622 = echarts.init(
+            document.getElementById('5994dcc2f1274df8b2b35c4f260fa622'), 'light', {renderer: 'canvas'});
+        var option_5994dcc2f1274df8b2b35c4f260fa622 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,96 +20,131 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
-    "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
-    ],
     "series": [
         {
             "type": "bar",
             "name": "svr",
             "data": [
-                0.9159971332712782
+                82.98
             ],
             "barCategoryGap": "20%",
             "label": {
                 "show": true,
                 "position": "top",
-                "margin": 8
+                "margin": 8,
+                "formatter": "{c} %"
+            }
+        },
+        {
+            "type": "bar",
+            "name": "svc",
+            "data": [
+                44.86
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": "{c} %"
             }
         },
         {
             "type": "bar",
             "name": "lR",
             "data": [
-                0.5181818181818182
+                30.45
             ],
             "barCategoryGap": "20%",
             "label": {
                 "show": true,
                 "position": "top",
-                "margin": 8
+                "margin": 8,
+                "formatter": "{c} %"
+            }
+        },
+        {
+            "type": "bar",
+            "name": "adaBoostR",
+            "data": [
+                42.9
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": "{c} %"
             }
         },
         {
             "type": "bar",
             "name": "adaBoost",
             "data": [
-                0.4545454545454545
+                27.54
             ],
             "barCategoryGap": "20%",
             "label": {
                 "show": true,
                 "position": "top",
-                "margin": 8
+                "margin": 8,
+                "formatter": "{c} %"
             }
         },
         {
             "type": "bar",
             "name": "Lasso",
             "data": [
-                0.6731685769359101
+                72.13
             ],
             "barCategoryGap": "20%",
             "label": {
                 "show": true,
                 "position": "top",
-                "margin": 8
+                "margin": 8,
+                "formatter": "{c} %"
+            }
+        },
+        {
+            "type": "bar",
+            "name": "DT",
+            "data": [
+                39.31
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": "{c} %"
+            }
+        },
+        {
+            "type": "bar",
+            "name": "NB",
+            "data": [
+                40.7
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": "{c} %"
             }
         },
         {
             "type": "bar",
             "name": "LGBM",
             "data": [
-                -0.10467490662083287
+                63.44
             ],
             "barCategoryGap": "20%",
             "label": {
                 "show": true,
                 "position": "top",
-                "margin": 8
+                "margin": 8,
+                "formatter": "{c} %"
             }
         }
     ],
@@ -117,16 +152,24 @@
         {
             "data": [
                 "svr",
+                "svc",
                 "lR",
+                "adaBoostR",
                 "adaBoost",
                 "Lasso",
+                "DT",
+                "NB",
                 "LGBM"
             ],
             "selected": {
                 "svr": true,
+                "svc": true,
                 "lR": true,
+                "adaBoostR": true,
                 "adaBoost": true,
                 "Lasso": true,
+                "DT": true,
+                "NB": true,
                 "LGBM": true
             },
             "show": true,
@@ -170,7 +213,7 @@
                 }
             },
             "data": [
-                "F1\u5747\u5206"
+                "F1/R2\u5747\u5206"
             ]
         }
     ],
@@ -199,13 +242,13 @@
     ],
     "title": [
         {
-            "text": "F1\u6761\u5f62\u56fe",
+            "text": "R2\u3001AC\u51b3\u5b9a\u7cfb\u6570\u5bf9\u6bd4\u56fe",
             "padding": 5,
             "itemGap": 10
         }
     ]
 };
-        chart_a2a449a9835f477896c2c6cd979ea3f3.setOption(option_a2a449a9835f477896c2c6cd979ea3f3);
+        chart_5994dcc2f1274df8b2b35c4f260fa622.setOption(option_5994dcc2f1274df8b2b35c4f260fa622);
     </script>
 </body>
 </html>
